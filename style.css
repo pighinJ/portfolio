@@ -5,11 +5,19 @@ body {
     font-family: 'Arial', sans-serif;
     color: #333;
     background-color: #fff;
-    position: absolute;
-    transform: translate(-50% -50%);
+
+    display: flex;
+    justify-content: center; /* centro horizontal */
+    align-items: center;     /* centro vertical */
+    min-height: 100vh;       /* altura total de la pantalla */
+    flex-direction: column;  /* para que los elementos se apilen verticalmente */
 }
 
-
+.container {
+    max-width: 1200px; /* o el ancho que quieras */
+    margin: 0 auto;    /* centra horizontalmente */
+    padding: 20px;
+}
 
 /*DARK MODE*/
 .dark-mode {
